@@ -15,25 +15,7 @@ public:
         head=NULL;
         tail=NULL;
     }
-    /*void create()
-    {
-        node *temp=new node;
-        std::cout << "Enter the value" << "\n";
-        int n;
-        cin>>n;
-        temp->data=n;
-        temp->next=NULL;
-        if(head==NULL)
-        {
-            head=temp;
-            tail=head;
-        }
-        else
-        {
-            tail->next=temp;
-            tail=temp;
-        }
-    }*/
+
     // no need to use the create used it already in insertStart()
     void display()
     {
@@ -107,19 +89,7 @@ public:
                 temp->next=cur;
                 break;
             case 4:
-                /*std::cout << "Link list is " << "\n";
-                temp=head;
-                while (temp!=NULL)
-                {
-                    std::cout << temp->data << "\t";
-                    temp=temp->next;
-                }
-                std::cout << "\n" << "\n";
-                break;
 
-            default:
-
-                std::cout << "Wrong choice" << "\n";*/
                 display();
                 break;
             }
@@ -169,17 +139,7 @@ public:
                 delete cur;
                 break;
             case 4:
-                /*std::cout << "Link list is " << "\n";
-                temp=head;
-                while (temp!=NULL)
-                {
-                    std::cout << temp->data << "\t";
-                    temp=temp->next;
-                }
-                std::cout << "\n" << "\n";
-                break;
-            default:
-                */
+                
                 display();
                 break;
             }
